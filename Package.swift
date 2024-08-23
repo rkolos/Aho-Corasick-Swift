@@ -12,16 +12,5 @@ let package = Package(
         .library(
             name: "AhoCorasick",
             targets: ["AhoCorasick"])
-    ],
-    targets: [
-        .target(
-            name: "AhoCorasick",
-            path: "Sources"  // Убедитесь, что путь к исходным файлам правильный
-        ),
-        .testTarget(
-            name: "AhoCorasickTests",
-            dependencies: ["AhoCorasick"],
-            path: "Tests"  // Убедитесь, что путь к тестам правильный
-        )
     ]
 )
